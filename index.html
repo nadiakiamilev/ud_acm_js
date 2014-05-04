@@ -1,6 +1,3 @@
-<!-- <h1>Welcome to ACM @UD!</h1>
-<p>CS Club at UD</p
- -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,55 +10,108 @@
 
     <title>ACM@UD</title>
 
-    <link href="Assets/Stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/styles/bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/styles/cover.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <link href="Assets/Stylesheets/cover.css" rel="stylesheet">
+    <script type="text/javascript" src="Assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="Assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Assets/js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="Assets/js/jquery.localScroll.min.js"></script>
+
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+    	// console.log("document ready!");
+
+    	$.localScroll({
+					// target: '#content', // could be a selector or a jQuery object too.
+					axis: 'y',
+					duration:1000,
+					hash:true,
+					onBefore:function( e, anchor, $target ){
+						// The 'this' is the settings object, can be modified
+					},
+					onAfter:function( anchor, settings ){
+						// The 'this' contains the scrolled element (#content)
+					}
+				});
+			});
+    </script>
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
 
-    <div class="site-wrapper">
+    <!-- <div class="container"> -->
+    <div>
 
-      <div class="site-wrapper-inner">
+      <nav id="topnav" class="clearfix navbar navbar-fixed-top">
+        <h3 class="masthead-brand"><img src="Assets/img/udlogo.png" style="width:50px; height:50px;">  ACM</h3>
+        <ul class="nav masthead-nav" id="navbar">
+          <li><a href="#home" id="homenavlink">Home</a></li>
+          <li><a href="#mission" id="missionnavlink">Our Mission</a></li>
+          <li><a href="#contact" id="contactnavlink">Contact Us</a></li>
+          <li><a href="events.html">Events & Workshops</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">ACM@UD</h3>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="events.html">Events & Workshops</a></li>
-                <li><a href="resources.html">Resources</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">ACM @UD</h1>
-            <p class="lead">Welcome to ACM's site!</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-
-          <div class="mastfoot">
-            <div class="inner">
-              
-            </div>
-          </div>
-
+      <section id="home" class="contentpg center">
+        <h1>ACM@UD</h1>
+        <p>The student chapter of the Association for Computing Machinery.</p>
+        <p id="arrow">
+          <a href="#mission" class="next"><i class="fa fa-angle-down fa-3x"></i></a>
+        </p>
+      </section>
+      
+      <div id="udbackground2"> 
+      <section id="mission" class="contentpg center">  
+        <h1>Our Mission.</h1><br>
+        <p>We're an integrated group of students with a passion for technology. Our focus is to provide you with the resources and support to help you be the best developer you can be. We hold weekly meetings, host technical workshops, provide technical career development support, and hack-a-thons throughout the semetser. Bookmark our site to keep tabs on the latest news & events!<br><br>
+        <a href="#contact" class="next"><i class="fa fa-angle-down fa-3x"></i></a>
+        </p>
+      </section>
+          
+      <section id="contact" class="contentpg center">
+        <div class="row">
+          <h2>Meet Our Board:</h2><br>
         </div>
 
-      </div>
+        <div class="container marketing">
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <img class="img-circle" src="Assets/img/nadia.jpg" style="width:140px; height:140px;">
+              <p>VP <br> Dan Billings</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <img class="img-circle" src="Assets/img/nadia.jpg" style="width:140px; height:140px;">
+              <p>Treasurer <br> Kahn Duong</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <img class="img-circle" src="Assets/img/nadia.jpg" style="width:140px; height:140px;">
+              <p>Secretary <br> Ryan Mckenna </p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <img class="img-circle" src="Assets/img/nadia.jpg" style="width:140px; height:140px;">
+              <p>Events Coordinator <br> Nadia Kiamilev</p>
+            </div>
+          </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="row">
+          <p>
+            <a href="https://www.facebook.com/groups/413526945414717/"><i class="fa fa-facebook-square fa-3x"></i></a>
+            <a href="mailto:acmudel@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
+            <a href="#"><i class="fa fa-github fa-3x"></i></a>
+          </p>
+        </div>
+        <a href="#home" class="next"><i class="fa fa-angle-up fa-3x"></i></a>
+      </section>
+      </div>    
 
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="Assets/Scripts/bootstrap.min.js"></script>
   </body>
+
 </html>

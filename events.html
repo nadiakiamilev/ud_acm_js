@@ -13,52 +13,67 @@
 
     <title>ACM@UD</title>
 
-    <link href="Assets/Stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="Assets/styles/bootstrap.min.css" rel="stylesheet">
 
-    <link href="Assets/Stylesheets/cover.css" rel="stylesheet">
+    <link href="Assets/styles/cover.css" rel="stylesheet">
 
   </head>
 
   <body>
 
-    <div class="site-wrapper">
+    <div class="container">
 
-      <div class="site-wrapper-inner">
+      <nav id="topnav" class="clearfix navbar navbar-fixed-top">
+        <h3 class="masthead-brand"><img src="Assets/img/udlogo.png" style="width:50px; height:50px;">  ACM</h3>
+        <ul class="nav masthead-nav" id="navbar">
+          <li><a href="index.html#home" id="homenavlink">Home</a></li>
+          <li><a href="index.html#mission" id="missionnavlink">Our Mission</a></li>
+          <li><a href="index.html#contact" id="contactnavlink">Contact Us</a></li>
+          <li class="active"><a href="events.html">Events & Workshops</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+      </nav>
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">ACM@UD</h3>
-              <ul class="nav masthead-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li class="active"><a href="#">Events & Workshops</a></li>
-                <li><a href="resources.html">Resources</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Upcoming Events & Workshops</h1>
-            <p class="lead">Check out our upcoming events listed below: <br>
-              -- insert table here -- </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-  
-            </div>
-          </div>
-
+      <div>
+        <div class="page-header">
+          <h1>Upcoming Events & Workshops</h1>
         </div>
 
-      </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Location</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Development Meetings</td>
+              <td>Every Tuesday 6-7PM</td>
+              <td>Gore 218</td>
+              <td><a href="https://www.facebook.com/events/625374694184900/">RSVP</a></td>
+            </tr>
+            <tr>
+              <td>Discussion Meetings</td>
+              <td>Every Thursday 6-7PM</td>
+              <td>Memorial 108</td>
+              <td><a href="https://www.facebook.com/events/625374694184900/">RSVP</a></td>
+            </tr>
+            <tr>
+              <td>CAGDStravaganza</td>
+              <td>05/10/14 5-11PM</td>
+              <td>Perkins Lounge</td>
+              <td><a href="https://www.facebook.com/events/625374694184900/">RSVP</a></td>
+            </tr>
+          </tbody>
+        </table>
 
+      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="Assets/Scripts/bootstrap.min.js"></script>
+    <script type="Assets/js/bootstrap.min.js"></script>
   </body>
 </html>

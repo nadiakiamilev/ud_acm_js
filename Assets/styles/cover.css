@@ -1,0 +1,133 @@
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/** Base structure */
+
+html,
+body {
+  height: 100%;
+  /*background-color: #7f8c8d;*/
+  background-image:url("../img/udbackground.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+body {
+  color: #fff;
+}
+
+/*Section Styles*/
+#udbackground2 {
+  background-image: url("../img/udbackground2.jpg");
+  /*background-size: cover;*/
+  background-repeat: repeat;
+}
+
+.contentpg {
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  min-height: 550px;
+  display: block;
+}
+
+#home h1 {
+  font-size: 75px;
+  padding-top: 130px;
+  color: #fff;
+}
+
+#mission h2, h1 {
+  padding-top: 200px;
+}
+
+#mission {
+  max-width: 500px;
+}
+
+#contact {
+  min-height: 750px;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+.table th, .table td {
+  /*border-top: none;*/
+  border: 0;
+}
+
+.page-header {
+  padding-top: 0px;
+}
+
+/** Header */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  text-indent: 20px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0px;
+  padding-left: 0px;
+  font-size: 16px;
+  /*font-weight: bold;*/
+  font-weight: lighter;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+    padding-right: 20px;
+  }
+}
+
+/** Affix and center*/
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+
+  /* Handle the widths */
+  .masthead {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .container {
+    width: 700px;
+  }
+}
