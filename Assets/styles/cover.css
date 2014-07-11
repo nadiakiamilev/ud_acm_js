@@ -14,6 +14,7 @@ body {
   background-image:url("../img/udbackground.jpg");
   background-size: cover;
   background-repeat:no-repeat;
+
 }
 body {
   color: #fff;
@@ -23,6 +24,7 @@ body {
 #udbackground2 {
   background-image: url("../img/udbackground2.jpg");
   /*background-size: cover;*/
+  background-position: 0px 1500px;
   background-repeat: repeat;
 }
 
@@ -35,14 +37,26 @@ body {
   display: block;
 }
 
+/*#home {
+  font-size: 75px;
+  padding-top: 130px;
+  color: #fff;
+  min-height: 500px;  
+}*/
+
+#home {
+  /*min-height: 100%;*/
+}
 #home h1 {
   font-size: 75px;
   padding-top: 130px;
   color: #fff;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 #mission h2, h1 {
-  padding-top: 200px;
+  padding-top: 120px;
 }
 
 #mission {
@@ -55,13 +69,10 @@ body {
   padding-bottom: 200px;
 }
 
-.table th, .table td {
-  /*border-top: none;*/
-  border: 0;
-}
-
-.page-header {
-  padding-top: 0px;
+.borderless td, th {
+  border-top: none;
+  border: none;
+  color: #7f8c8d;
 }
 
 /** Header */
@@ -100,13 +111,24 @@ body {
   border-bottom-color: #fff;
 }
 
+/*Resources*/
+.page-header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding-top: 100px;
+}
+
+/*Events*/
+
 @media (min-width: 768px) {
   .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
     float: right;
     padding-right: 20px;
+  }
+  .masthead-nav {
+    float: left;
+    padding-left: 20px;
   }
 }
 
@@ -116,12 +138,12 @@ body {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
-    top: 0;
+    top: 20px;
   }
 
   /* Handle the widths */
   .masthead {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 100%;  Must be percentage or pixels for horizontal alignment 
   }
 }
 
@@ -129,5 +151,6 @@ body {
   .masthead,
   .container {
     width: 700px;
+    margin-top: auto;
   }
 }
