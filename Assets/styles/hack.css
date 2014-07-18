@@ -1,0 +1,31 @@
+.parallaxsection {
+    height: auto;  
+    margin: 0 auto; 
+    width: 100%; 
+    position: relative; 
+    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+    padding: 50px 0 50px;
+}
+#intro { 
+
+}
+#challenge { 
+	background: url(../img/keyboard.jpg) 0 fixed;
+    padding: 200px 0;
+}
+#discover { 
+    background: url(../img/servers.jpg) 0 fixed; 
+	
+	padding: 100px 0 100px;
+}
+#prizes {
+    background: linear-gradient(72deg, #777777 14%, #999999 61%, #ffffff); 
+}
+#register {
+	background: url(../img/binary.jpg) 0 fixed; 
+}
+#sponsors { 
+    background: url(../img/sandiego.jpg) 0 fixed; 
+    padding-bottom: 10%;
+    color: #fff;
+}
