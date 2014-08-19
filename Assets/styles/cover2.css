@@ -29,6 +29,7 @@ body {
   display: block;
 }
 
+/*Home Section CSS*/
 #home {
   min-height: 100%;
 }
@@ -69,7 +70,7 @@ body {
   padding: 200px 0;
 }
 
-
+/*Mission Paragraph CSS*/
 #mission h2, h1 {
   padding-top: 50px;
   color: #22313F;
@@ -89,6 +90,11 @@ body {
 }
 
 /* MailChimp Form Embed Code - Slim - In-Line Edit */
+#mc_embed_signup {
+  background:#fff; 
+  clear:left; 
+  font:12px "Helvetica Neue",Helvetica,Arial,sans-serif; 
+}
 #mc_embed_signup form {
   display:block; 
   position:relative; 
@@ -99,7 +105,6 @@ body {
 #mc-embedded-subscribe-form .email {
 position: absolute;
 }
-
 #mc-embedded-subscribe-form {
 float: left;
 }
@@ -146,6 +151,8 @@ float: right;
 #mc_embed_signup #mce-success-response {color:#529214; display:none;}
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 
+
+/**Contact CSS***/
 #contact {
   min-height: 500px;
   padding-top: 150px;
