@@ -34,11 +34,20 @@ body {
 }
 
 #home h1 {
-  font-size: 75px;
+  font-size: 90px;
   /*padding-top: -130px;*/
+  /*vertical-align: top;*/
+  margin-top: -130px;
+  text-align: center;
   color: #fff;
   min-height: 100%;
   min-width: 100%;
+}
+
+#home p {
+  vertical-align: bottom;
+  text-align: center;
+  margin-bottom: 150px;
 }
 
 .parallaxsection {
@@ -46,15 +55,10 @@ body {
     margin: 0 auto; 
     width: 100%; 
     position: relative; 
-    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
     padding: 50px 0 50px;
 }
 
 #home { 
-  /*background: url(../img/udbackground.jpg) 50% 0 fixed;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  padding: 200px 0;*/
   background: url(../img/udbackground.jpg) 50% 0 fixed; 
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,11 +78,13 @@ body {
 #mission {
   max-width: 500px;
   max-height: 300px;
+  /*max-height: 100%;*/
   color: #22313F;
 }
 
 #missionparagraph {
   max-height: 300px;
+  max-height: 100%;
   text-align: center;
 }
 
