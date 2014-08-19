@@ -11,8 +11,8 @@
     <title>ACM@UD</title>
 
     <link href="Assets/styles/bootstrap.min.css" rel="stylesheet" />
-
     <link href="Assets/styles/cover.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
 
   </head>
 
@@ -20,60 +20,57 @@
 
     <div class="container">
 
-      <nav id="topnav" class="clearfix navbar navbar-fixed-top">
-        <h3 class="masthead-brand"><img src="Assets/img/udlogo.png" style="width:50px; height:50px;">  ACM</h3>
-        <ul class="nav masthead-nav" id="navbar">
-          <li><a href="index.html#home" id="homenavlink">Home</a></li>
-          <li><a href="index.html#mission" id="missionnavlink">Our Mission</a></li>
-          <li><a href="index.html#contact" id="contactnavlink">Contact Us</a></li>
-          <li class="active"><a href="events.html">Calendar</a></li>
-          <li><a href="resources.html">Resources</a></li>
-        </ul>
+      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ACM UD</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html#home" id="homenavlink">Home</a></li>
+              <li><a href="index.html#mission" id="missionnavlink">Our Mission</a></li>
+              <li><a href="index.html#contact" id="contactnavlink">Our Team</a></li>
+              <li class="active"><a href="events.html">Calendar</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="https://www.facebook.com/groups/413526945414717/">Our Facebook Group</a></li>
+                  <li class = "divider"></li>
+                  <li><a href="http://www.cis.udel.edu/">CIS Department</a></li>
+                  <li><a href="https://www.facebook.com/groups/CAGDUD/?ref=br_tf">CAGD</a></li>
+                  <li><a href="http://www.udel.edu/CSC/">Career Services </a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="mailto:acmudel@gmail.com"><i class="fa fa-envelope fa-1.5x"></i></a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <div id="events">
         <h2 class="page-header">Upcoming Events & Workshops</h2>
-
-        <div class="well">
-        <table class="table borderless" style="border-top: none;">
-          <thead>
-            <tr>
-              <th>Event</th>
-              <th>Description</th>
-              <th>Date</th>
-              <th>Location</th>
-              <th>Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Activities Night</td>
-              <td>Activities Night</td>
-              <td>August 24, 2014 7-9 PM</td>
-              <td>Trabant MPR</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Tuesday Meeting</td>
-              <td>Freshman Welcome & Intro to our Peer Mentorship Program!</td>
-              <td>September 2, 2014 7:30-8:30 PM</td>
-              <td>TBA</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>HackD</td>
-              <td>Fall Hackathon</td>
-              <td>October 4-5, 2014</td>
-              <td>Trabant MPR</td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table></div>
-
       </div>
+
+      <iframe src="https://www.google.com/calendar/embed?title=ACM UD&amp;height=500&amp;wkst=1&amp;ctz=America%2FNew_York" style=" border-width:0 " width="675" height="450" frameborder="0" scrolling="no"></iframe>
+
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="Assets/js/bootstrap.min.js"></script>
+    
   </body>
+  
+  <script type="text/javascript" src="Assets/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="Assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Assets/js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="Assets/js/jquery.localScroll.min.js"></script>
+
 </html>

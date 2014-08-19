@@ -11,50 +11,51 @@
     <title>ACM@UD</title>
 
     <link href="Assets/styles/bootstrap.min.css" rel="stylesheet" />
-    <link href="Assets/styles/cover.css" rel="stylesheet" />
+    <link href="Assets/styles/cover2.css" rel="stylesheet" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-
-    <script type="text/javascript" src="Assets/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="Assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="Assets/js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="Assets/js/jquery.localScroll.min.js"></script>
-
-
-    <script type="text/javascript">
-    $(document).ready(function () {
-    	// console.log("document ready!");
-
-    	$.localScroll({
-					// target: '#content', // could be a selector or a jQuery object too.
-					axis: 'y',
-					duration:1000,
-					hash:true,
-					onBefore:function( e, anchor, $target ){
-						// The 'this' is the settings object, can be modified
-					},
-					onAfter:function( anchor, settings ){
-						// The 'this' contains the scrolled element (#content)
-					}
-				});
-			});
-    </script>
 
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
-
-    <!-- <div class="container"> -->
     <div>
 
-      <nav id="topnav" class="clearfix navbar navbar-fixed-top">
-        <h3 class="masthead-brand"><img src="Assets/img/udlogo.png" style="width:50px; height:50px;">  ACM</h3>
-        <ul class="nav masthead-nav" id="navbar">
-          <li><a href="#home" id="homenavlink">Home</a></li>
-          <li><a href="#mission" id="missionnavlink">Our Mission</a></li>
-		      <li><a href="#contact" id="contactnavlink">Contact Us</a></li>
-          <li><a href="events.html">Calendar</a></li>
-          <li><a href="resources.html">Resources</a></li>
-        </ul>
+      <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ACM UD</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#home" id="homenavlink">Home</a></li>
+            <li><a href="#mission" id="missionnavlink">Our Mission</a></li>
+            <li><a href="#contact" id="contactnavlink">Our Team</a></li>
+            <li><a href="events.html">Calendar</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="https://www.facebook.com/groups/413526945414717/">Our Facebook Group</a></li>
+                <li class = "divider"></li>
+                <li><a href="http://www.cis.udel.edu/">CIS Department</a></li>
+                <li><a href="https://www.facebook.com/groups/CAGDUD/?ref=br_tf">CAGD</a></li>
+                <li><a href="http://www.udel.edu/CSC/">Career Services </a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="mailto:acmudel@gmail.com"><i class="fa fa-envelope fa-1.5x"></i></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
       </nav>
 
       <section id="home" class="contentpg center">
@@ -66,62 +67,61 @@
       </section>
       
       <div id="udbackground2"> 
+
       <section id="mission" class="contentpg center">        
-        <div class="row">        
-          <h1>Our Mission.</h1><br>
+        
+        <div class="row" id="missionparagraph">        
+          <h1>Our Mission</h1><br>
 
           <p>ACM is the world’s largest educational and scientific computing society. We represent UD's student chapter to cater to students who deal with computer science and also for those who are simply interested in technology and learning more about the field. We hold weekly meetings, host technical workshops, and run hack-a-thons throughout the semetser.</p>
 
-          <p>We're also here to expose students to life in the tech industry - from interview tips&tricks, student led mock interviews, to resume pointers. Some of our weekly meetings include speakers from students with industry experience and alumni already out in the field. </p>
+          <p>We're also here to expose students to life in the tech industry - from interview tips & tricks, student led mock interviews, to resume pointers. Some of our weekly meetings include speakers from students with industry experience and alumni already out in the field. </p>
 
           <p>Bookmark our site to keep tabs on the latest news & events!</p>
+
         </div>  
-        
-        <a href="#contact" class="next"><i class="fa fa-angle-down fa-3x"></i></a>
+
       </section>
           
       <section id="contact" class="contentpg center">
+        
         <div class="row">
-          <h2>Meet Our Board:</h2><br>
+          <h2>Our Team</h2><br>
         </div>
 
         <div class="container marketing">
           <div class="row">
-            <div class="col-xs-5 col-md-2">
-              <img class="img-circle" src="Assets/img/NKiamilev-2.png" style="width:110px; height:110px;">
-              <p>President <br> Nadia Kiamilev</p>
+            <div class="col-xs-5 col-md-1">
+              
             </div>
-            <div class="col-xs-5 col-md-2">
-              <img class="img-circle" src="Assets/img/sandiego.jpg" style="width:110px; height:110px;">
-              <p>VP <br> Dan Billings</p>
+            <div class="col-md-2">
+              <img class="img-circle" src="Assets/img/NKiamilev-2.png" style="width:125px; height:125px;">
+              <p style="align-center">President <br> Nadia </p>
             </div>
-            <div class="col-xs-5 col-md-2">
-              <img class="img-circle" src="Assets/img/sandiego.jpg" style="width:110px; height:110px;">
-              <p>Treasurer <br> Kahn Duong</p>
+            <div class="col-md-2">
+              <img class="img-circle" src="Assets/img/sandiego.jpg" style="width:125px; height:125px;">
+              <p style="align-center">VP <br> Dan </p>
             </div>
-            <div class="col-xs-5 col-md-2">
-              <img class="img-circle" src="Assets/img/sandiego.jpg" style="width:110px; height:110px;">
-              <p>Secretary <br> EJ Murphy </p>
+            <div class="col-md-2">
+              <img class="img-circle" src="Assets/img/sandiego.jpg" style="width:125px; height:125px;">
+              <p style="align-center">Treasurer <br> Kahn </p>
             </div>
-            <div class="col-xs-5 col-md-2">
-              <img class="img-circle" src="Assets/img/sandiego.jpg" style="width:110px; height:110px;">
-              <p>Events Coordinator <br> Ryan Mckenna</p>
+            <div class="col-md-2">
+              <img class="img-circle" src="Assets/img/sandiego.jpg" style="width:125px; height:125px;">
+              <p style="align-center">Secretary <br> EJ </p>
+            </div>
+            <div class="col-md-2">
+              <img class="img-circle" src="Assets/img/seniorpic.png" style="width:125px; height:125px;">
+              <p style="align-center">Events Coordinator <br> Ryan </p>
+            </div>
+            <div class="col-xs-5 col-md-1">
+              
             </div>
           </div>
         </div>
+      
+        </div>
 
-        <br><br><br><br>
-
-        <div class="row">
-          <p>
-            <a href="https://www.facebook.com/groups/413526945414717/"><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a href="mailto:acmudel@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
-            <a href="#"><i class="fa fa-github fa-3x"></i></a>
-          </p>
-        </div> <br>
-
-
-        <a href="#home" class="next"><p style="font-weight:lighter">Top</p></a>
       </section>
 
       </div>    
@@ -129,5 +129,11 @@
     </div>
 
   </body>
+
+  <script type="text/javascript" src="Assets/js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="Assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Assets/js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript" src="Assets/js/jquery.localScroll.min.js"></script>
+  <script type="text/javascript" src="Assets/js/index.js"></script>
 
 </html>

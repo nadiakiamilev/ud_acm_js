@@ -1,0 +1,78 @@
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/** Base structure */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /*background-color: #7f8c8d;*/
+  background-image:url("../img/udbackground.jpg");
+  background-size: cover;
+  background-repeat:no-repeat;
+
+}
+body {
+  color: #fff;
+}
+
+.contentpg {
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  min-height: 550px;
+  display: block;
+}
+
+/*#home {
+  font-size: 75px;
+  padding-top: 130px;
+  color: #fff;
+  min-height: 500px;  
+}*/
+
+#home {
+  /*min-height: 100%;*/
+}
+#home h1 {
+  font-size: 75px;
+  padding-top: 130px;
+  color: #fff;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+#mission h2, h1 {
+  padding-top: 120px;
+  color: #22313F;
+}
+
+#mission {
+  max-width: 500px;
+  max-height: 300px;
+  color: #22313F;
+}
+
+#missionparagraph {
+  max-height: 300px;
+  text-align: center;
+}
+
+#contact {
+  /*min-height: 750px;*/
+  padding-top: 150px;
+  /*padding-bottom: 100px;*/
+  background-image: url("../img/udbackground2.jpg");
+}
+
+.borderless td, th {
+  border-top: none;
+  border: none;
+  color: #7f8c8d;
+}
