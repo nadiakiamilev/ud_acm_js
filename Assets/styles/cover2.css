@@ -5,6 +5,23 @@ a:hover {
   color: #fff;
 }
 
+/*Navbar*/
+/*.inverse-dropdown{
+  background-color: #222;
+  border-color: #080808;
+  &>li>a {
+    color: #ecf0f1;
+    &:hover{
+      color: #fff;
+      background-color: #000;
+    }
+  }
+  &>.divider {
+    background-color: #000;
+  }
+}
+*/
+
 /** Base structure */
 
 html,
@@ -16,8 +33,11 @@ body {
   background-size: cover;
   background-repeat:no-repeat;*/
 }
+
 body {
   color: #fff;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
 }
 
 .contentpg {
@@ -38,6 +58,7 @@ body {
   font-size: 90px;
   /*padding-top: -130px;*/
   /*vertical-align: top;*/
+  font-family: 'Libre Baskerville', serif;
   margin-top: -130px;
   text-align: center;
   color: #fff;
@@ -49,6 +70,9 @@ body {
   vertical-align: bottom;
   text-align: center;
   margin-bottom: 150px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 13.5px;
+  font-style: italic;
 }
 
 .parallaxsection {
@@ -117,6 +141,8 @@ float: right;
 #mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
 #mc_embed_signup input:focus {border-color:#333;}
 #mc_embed_signup .button {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: bold;
   float: right;
   clear:both; 
   background-color: #aaa; 
@@ -126,7 +152,6 @@ float: right;
   cursor: pointer; 
   display: inline-block; 
   font-size:15px; 
-  font-weight: bold; 
   height: 32px; 
   line-height: 32px; 
   margin: 0px 5px 10px 0; 
