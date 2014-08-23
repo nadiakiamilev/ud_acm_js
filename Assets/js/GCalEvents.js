@@ -1,0 +1,50 @@
+function GCalEvents(gcal_json_url) {
+
+        // Get list of upcoming iCal events formatted in JSON
+        jQuery.getJSON(gcal_json_url, function(data){
+
+            // Parse and render each event
+            jQuery.each(data.feed.entry, function(i, item){
+                if(i == 0) {
+                    jQuery("#gcal-events li").first().hide();
+                };
+                
+                // event title
+                var event_title = item.title.$t;
+                
+                // event contents
+                var event_contents = jQuery.trim(item.content.$t);
+                // make each separate line a new list item
+                event_contents = event_contents.replace(/\n/g,"</li><li>");
+
+                // event start date/time
+                var event_start_date = new Date(item.gd$when[0].startTime);
+                
+                // if event has a start time (as oppose to all day), format date with time
+                if(event_start_date.getHours() != 0 || event_start_date.getMinutes() != 0) {
+                    var event_start_str = event_start_date.toString("ddd MMM d, h:mm tt");
+                } else {
+                // otherwise format start as date only (without time)
+                    var event_start_str = event_start_date.toString("ddd MMM d");                
+                };
+                
+                // event location
+                var event_loc = item.gd$where[0].valueString;
+                
+                // Render the event
+                jQuery("#gcal-events li").last().before(
+					"<li><div class='container'>"
+					+ "<label class='header' for='"+i+"'>" + event_title + "</label>"
+					+ "<input id='"+i+"' type='checkbox'/>"
+					+	"<div class='content'>"
+						+ 	"<ul>"
+						+ 		"<li>" + event_start_str + "</li>"
+						+ 		"<li>" + event_loc + "</li>"	
+						+ 		"<li>" + event_contents + "</li>"
+						+ 	"</ul>"
+					+ "</div></div>"
+                    + "</li>"
+                );
+            });
+        });
+}
