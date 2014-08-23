@@ -14,8 +14,6 @@ function GCalEvents(gcal_json_url) {
                 
                 // event contents
                 var event_contents = jQuery.trim(item.content.$t);
-                // make each separate line a new list item
-                event_contents = event_contents.replace(/\n/g,"</li><li>");
 
                 // event start date/time
                 var event_start_date = new Date(item.gd$when[0].startTime);
@@ -37,11 +35,10 @@ function GCalEvents(gcal_json_url) {
 					+ "<label class='header' for='"+i+"'>" + event_title + "</label>"
 					+ "<input id='"+i+"' type='checkbox'/>"
 					+	"<div class='content'>"
-						+ 	"<ul>"
-						+ 		"<li>" + event_start_str + "</li>"
-						+ 		"<li>" + event_loc + "</li>"	
-						+ 		"<li>" + event_contents + "</li>"
-						+ 	"</ul>"
+						+ 	"<h5><strong>Time:</strong> " + event_start_str + "</h5>"
+						+ 	"<h5><strong>Location:</strong> " + event_loc + "</h5>"
+						+	"<h5><strong>Description: </strong></h5>"
+						+ 	"<p>" + event_contents.replace(/\n/g,"</p><p>") + "</p>"
 					+ "</div></div>"
                     + "</li>"
                 );
