@@ -36,6 +36,7 @@ function GCalEvents(gcal_json_url) {
                 jQuery("#gcal-events li").last().before(
 					"<li class='gcal-event-style'><div class='container'>"
 					+ "<label class='header' for='"+i+"'>" + event_title + " <i class='fa fa-caret-down'></i>" + "</label>"
+                    // + "<h5 class='header' for='"+i+"'>" + event_title + " <i class='fa fa-caret-down'></i>" + "</h5>"
 					+ "<input id='"+i+"' type='checkbox'/>"
 					+	"<div class='content'>"
 						+ 	"<h5><strong>Time:</strong> " + event_start_str + "</h5>"
