@@ -4,6 +4,14 @@ body {
   font-weight: 300;
 }
 
+.thumbnail {
+	padding-top: 10px;
+	border: 0px;
+	margin: 10px;
+	/*height: 375px;*/
+	overflow: scroll;
+}
+
 /*List styling*/
 ul {
 	list-style-type: none;
