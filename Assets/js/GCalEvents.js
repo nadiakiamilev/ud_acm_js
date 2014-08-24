@@ -5,6 +5,7 @@ function GCalEvents(gcal_json_url) {
 
             // Parse and render each event
             jQuery.each(data.feed.entry, function(i, item){
+
                 if(i == 0) {
                     jQuery("#gcal-events li").first().hide();
                 };
@@ -17,6 +18,8 @@ function GCalEvents(gcal_json_url) {
 
                 // event start date/time
                 var event_start_date = new Date(item.gd$when[0].startTime);
+
+                //create MM/DD variable for event start date title
                 
                 // if event has a start time (as oppose to all day), format date with time
                 if(event_start_date.getHours() != 0 || event_start_date.getMinutes() != 0) {
@@ -31,8 +34,8 @@ function GCalEvents(gcal_json_url) {
                 
                 // Render the event
                 jQuery("#gcal-events li").last().before(
-					"<li><div class='container'>"
-					+ "<label class='header' for='"+i+"'>" + event_title + "</label>"
+					"<li class='gcal-event-style'><div class='container'>"
+					+ "<label class='header' for='"+i+"'>" + event_title + " <i class='fa fa-caret-down'></i>" + "</label>"
 					+ "<input id='"+i+"' type='checkbox'/>"
 					+	"<div class='content'>"
 						+ 	"<h5><strong>Time:</strong> " + event_start_str + "</h5>"
