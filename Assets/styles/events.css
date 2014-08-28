@@ -6,10 +6,17 @@ body {
 
 .thumbnail {
 	padding-top: 10px;
-	/*border: 0px;*/
-	margin: 10px;
-	height: 375px;
+	border: 0px;
+	border-radius: 0px;
+	margin: 0px;
+	margin-bottom: 30px;
+	height: 450px;
+	background-color: #02569E;
 	overflow: scroll;
+}
+
+.thumbnail p, h3 {
+	color: #fff;
 }
 
 /*List styling*/
