@@ -19,7 +19,8 @@ body {
 
 h1 {
   font-family: 'Oswald', sans-serif;
-  color: #2c3e50;
+  /*color: #2c3e50;*/
+  color: #02569E;
 }
 
 
@@ -33,26 +34,10 @@ h1 {
   min-height: 400px;
   /*top: 250px;*/
   display: block;
+  opacity: 1;
 }
 
 /*Button CSS*/
-.btn {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 18px;
-  background: #2c3e50;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #2980b9;
-  text-decoration: none;
-}
-
 #btn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -69,10 +54,9 @@ h1 {
 }
 
 #btn:hover {
-  background: #2980b9;
+  background: #02569E;
   text-decoration: none;
 }
-
 
 /*Home Section CSS*/
 .wrap{
@@ -94,19 +78,10 @@ h1 {
 
 #home h5 {
   /*vertical-align: bottom;*/
-  text-align: center;
+  text-align: left;
   margin-bottom: -150px;
   font-family: 'Sanchez', serif;
   font-size: 18.5px;
-}
-
-.type-wrap{
-  /*margin:-300px auto;*/
-  /*padding:20px;*/
-  /*max-width: 600px;
-  vertical-align: center;
-  text-align: center;*/
-  /*margin:30px auto;*/
 }
 
 .parallaxsection {
@@ -129,7 +104,13 @@ h1 {
 }
 
 #home h5 {
-    color: #fff;
+  color: #fff;
+}
+
+
+#arrow {
+  color: #fff;
+  font-size: 40px;
 }
 
 .typed-cursor{
@@ -163,13 +144,20 @@ h1 {
     left: 200px;
 }
 
-/*Information*/
+/*What is DelHack?*/
+#information p {
+  color: #2c3e50;
+}
 
 /*FAQ*/
 #faq {
-  background-color: #f0f0f0;
+  background: url(../img/udbackground2.jpg) 50% 0 fixed; 
   padding-top: 15px;
   min-height: 500px;
+}
+
+#faq h1 {
+  color: #fff;
 }
 
 #questions {
@@ -177,19 +165,25 @@ h1 {
 }
 
 .thumbnail {
-  background-color: none;
+  color: #fff;
+  background-color: transparent;
   border: 0px;
   border-radius: 0px;
-  background-color: #f0f0f0;
 }
 
 #contact {
   text-align: center;
+  color: #fff;
 }
 
 /*Sponsors*/
 #sponsors {
   min-height: 500px;
+}
+
+#contact2 {
+  text-align: center;
+  color: #2c3e50;
 }
 
 
