@@ -2,7 +2,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #2980b9;
 }
 
 /** Base structure */
@@ -49,6 +49,26 @@ h1 {
 }
 
 .btn:hover {
+  background: #2980b9;
+  text-decoration: none;
+}
+
+#btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  border-radius: 0px;
+  border: 0px;
+  /*font-family: Arial;*/
+  color: #ffffff;
+  font-size: 18px;
+  background: #2c3e50;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#btn:hover {
   background: #2980b9;
   text-decoration: none;
 }
@@ -149,9 +169,28 @@ h1 {
 #faq {
   background-color: #f0f0f0;
   padding-top: 15px;
+  min-height: 500px;
+}
+
+#questions {
+  max-width: 800px;
+}
+
+.thumbnail {
+  background-color: none;
+  border: 0px;
+  border-radius: 0px;
+  background-color: #f0f0f0;
+}
+
+#contact {
+  text-align: center;
 }
 
 /*Sponsors*/
+#sponsors {
+  min-height: 500px;
+}
 
 
 
