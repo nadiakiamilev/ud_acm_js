@@ -11,114 +11,122 @@
     <title>ACM@UD</title>
 
     <link href="Assets/styles/bootstrap.min.css" rel="stylesheet" />
-    <link href="Assets/styles/cover.css" rel="stylesheet" />
-	<link href="Assets/styles/hack.css" rel="stylesheet" />
+    <link href="Assets/styles/hack.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="Assets/js/typed.js"></script>
+    <script type="text/javascript" src="Assets/js/bootstrap.min.js"></script>
+
+    <script>
+	  $(function(){
+	      $("#typed").typed({
+	        strings: ["What can you make in 24 hours?"],
+	        typeSpeed: 30
+	      });
+	  });
+	</script>
 
   </head>
 
   <body>
-      <nav id="topnav" class="clearfix navbar navbar-fixed-top">
-        <h3 class="masthead-brand"><img src="Assets/img/udlogo.png" style="width:50px; height:50px;">  ACM</h3>
-        <ul class="nav masthead-nav" id="navbar">
-          <li><a href="index.html#home" id="homenavlink">Home</a></li>
-          <li><a href="index.html#mission" id="missionnavlink">Our Mission</a></li>
-          <li><a href="index.html#contact" id="contactnavlink">Contact Us</a></li>
-		  <li class="active"><a href="hack.html">HackD</a></li>
-          <li><a href="events.html">Calendar</a></li>
-          <li><a href="resources.html">Resources</a></li>
-        </ul>
-      </nav>
-	  
-		<section class="parallaxsection" id="intro" data-speed="10" data-type="background">
-			<div class="container">
-				<img class="center-block img-responsive" src="Assets/img/hackd2.png" alt="hackD 2014 Logo" />
-				<div class="row">
-					<h3 class="center-block">October 4-5. 24 hours. Hack. Create. Win.</h3>
+	<section id="home">
+		<h1>DELHACK</h1>
+		<div class="wrap">
+			<div class="type-wrap">
+				<span id="typed"></span>
+			</div>
+	  		
+		</div>
+		
+		<h5>
+	  		October 4-5. Perkins Lounge.
+	  	</h5>
+	  	<button class="btn">Register Now</button>
+
+	</section>
+
+	<section id="information">
+		<div class="contentpg">
+			<br><h1>What is DelHack?</h1>
+			<p>
+				DelHack is UD's premier student run hackathon, a 24 hour programming event, founded by developers and created for developers. It's not an event meant for breaking into systems or hacking into software - it's about putting something together and scrapping an idea with minimal resources in an incredibly small amount of time. <br><br>
+
+				We're a community of builders. DelHack will be a place for students to strengthen their technical abilities, develop or discover new ones, and work on technical projects relevant to their own interests - whether it be hardware or software. It's a place that's meant to turn an idea into a reality, all within 24 hours. <br><br>
+
+				So what are you waiting for? Go ahead and register today.
+			</p>
+			<button class="btn">Register Here</button>
+		</div>		
+	</section>
+
+	<section id="faq">
+		<div class="contentpg">
+			<h1>FAQ</h1>
+			<!-- Create thumbnails for FAQS here -->
+			<div class="row">
+			  <div class="col-xs-6 col-md-3">
+			    <div class="thumbnail">
+			      <p>hello</p>
+			    </div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <div class="thumbnail">
+			      <p>hello</p>
+			    </div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <div class="thumbnail">
+			      <p>hello</p>
+			    </div>
+			  </div>
+			  <div class="col-xs-6 col-md-3">
+			    <div class="thumbnail">
+			      <p>hello</p>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+				    <div class="thumbnail">
+				      <p>hello</p>
+				    </div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+				    <div class="thumbnail">
+				      <p>hello</p>
+				 	</div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+				    <div class="thumbnail">
+				      <p>hello</p>
+				    </div>
+				</div>
+				<div class="col-xs-6 col-md-3">
+				    <div class="thumbnail">
+				      <p>hello</p>
+				    </div>
 				</div>
 			</div>
-		</section>
-		
-		
-		<section class="parallaxsection" id="challenge" data-speed="4" data-type="background">
-			<div class="container">
-				<h2>Innovate</h2>
-				<p>hackD is Delaware's premier student-run hackathon.  You'll have 24 hours to develop a product from start to finish.</p>
-				<p>Have an idea for the next big app?  Want to meet and work with other CS majors?  Join and we'll pair you with a developer from a technology company who can help guide you through the process.  And don't worry, we'll have plenty of food and drinks to keep you going through the night.</p>
-			</div>
-		</section>
-		
-		
-		<section class="parallaxsection" id="discover" data-speed="23" data-type="background">
-			<div class="container">
-				<h2>Learn and Discover New Technology</h2>
-				<p>Got an idea but don't know how to make it reality?  No problem!  We'll be running workshops in the weeks leading up to the hackathon, and have a few crash courses during the hackathon.  To give you an idea of a few of the topics we'll be covering:</p>
-				<ul>
-					<li>Android Apps</li>
-					<li>Web Applications</li>
-					<li>Game Development</li>
-				</ul>
-			</div>
-		</section>
-		
-		
-		<section class="parallaxsection" id="prizes" data-speed="4" data-type="background">
-			<div class="container">
-				<h2>Win Awesome Prizes</h2>
-				<h3>First Place - $(STUFF_HERE)</h3>
-				<h3>Second Place - $(STUFF_HERE)</h3>
-				<h3>API_AWARD - $(STUFF_HERE)</h3>
-			</div>
-		</section>
-		
-		
-		<section class="parallaxsection" id="register" data-speed="4" data-type="background">
-			<div class="container">
-				<h2>Ready to Sign Up?</h2>
-				<div class="row">
-					<p>Registration opens August 1, 2014.  Enter your email below and we'll let you know when registration opens.  Your email will not be shared.</p>
-				</div>
-			</div>
-		</section>
-		
-		
-		<section class="parallaxsection" id="sponsors" data-speed="10" data-type="background">
-		  <div class="container">
-		    <h2>Made Possible With Support from Our Generous Sponsors</h2>
-			<div class="row">
-			  <div class="col-md-12">
-				<img class="img-responsive center-block" src="Assets/img/sponsor1.png" />
-			  </div>
-			</div>
-			
-			<div class="row">
-			  <div class="col-md-6">
-				<img class="img-responsive center-block" src="Assets/img/sponsor1.png" />
-			  </div>
-			  <div class="col-md-6">
-				<img class="img-responsive center-block" src="Assets/img/sponsor1.png" />
-			  </div>
-			</div>
-			
-			<div class="row">
-			  <div class="col-xs-6 col-md-3 center-block">
-				<img class="img-responsive" src="Assets/img/sponsor1.png" />
-			  </div>
-			  <div class="col-xs-6 col-md-3 center-block">
-				<img class="img-responsive" src="Assets/img/sponsor1.png" />
-			  </div>
-			  <div class="col-xs-6 col-md-3 center-block">
-				<img class="img-responsive" src="Assets/img/sponsor1.png" />
-			  </div>
-			  <div class="col-xs-6 col-md-3 center-block">
-				<img class="img-responsive" src="Assets/img/sponsor1.png" />
-			  </div>
-			</div>
-		  </div>
-		</section>
+		</div>		
+	</section>
 
+	<section id="sponsors">
+		<div class="contentpg">
+			<h1>Sponsors</h1>
+		</div>
+		
+	</section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="Assets/js/bootstrap.min.js"></script>
-	<script type="Assets/js/hack.js"></script>
+	<section id="contact">
+		<div class="row">
+
+		</div>
+	</section>
+	
+
+    
   </body>
 </html>

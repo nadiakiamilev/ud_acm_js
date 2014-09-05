@@ -1,31 +1,163 @@
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/** Base structure */
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #2c3e50;
+}
+
+
+.contentpg {
+  /*margin-top: 200px;*/
+  /*vertical-align: middle;*/
+  /*text-align: center;*/
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  min-height: 400px;
+  /*top: 250px;*/
+  display: block;
+}
+
+/*Button CSS*/
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #2c3e50;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #2980b9;
+  text-decoration: none;
+}
+
+
+/*Home Section CSS*/
+.wrap{
+  
+}
+
+#home {
+  min-height: 100%;
+}
+
+#home h1 {
+  font-size: 100px;
+  margin-top: 0px;
+  text-align: center;
+  color: #fff;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+#home h5 {
+  /*vertical-align: bottom;*/
+  text-align: center;
+  margin-bottom: -150px;
+  font-family: 'Sanchez', serif;
+  font-size: 18.5px;
+}
+
+.type-wrap{
+  /*margin:-300px auto;*/
+  /*padding:20px;*/
+  /*max-width: 600px;
+  vertical-align: center;
+  text-align: center;*/
+  /*margin:30px auto;*/
+}
+
 .parallaxsection {
-    height: auto;  
+    height: 100%;  
     margin: 0 auto; 
     width: 100%; 
     position: relative; 
-    /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
     padding: 50px 0 50px;
 }
-#intro { 
 
+#home { 
+  background: url(../img/newnewnewblur.jpg) 50% 0 fixed; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;  
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+  padding: 200px 0;
 }
-#challenge { 
-	background: url(../img/keyboard.jpg) 0 fixed;
-    padding: 200px 0;
-}
-#discover { 
-    background: url(../img/servers.jpg) 0 fixed; 
-	
-	padding: 100px 0 100px;
-}
-#prizes {
-    background: linear-gradient(72deg, #777777 14%, #999999 61%, #ffffff); 
-}
-#register {
-	background: url(../img/binary.jpg) 0 fixed; 
-}
-#sponsors { 
-    background: url(../img/sandiego.jpg) 0 fixed; 
-    padding-bottom: 10%;
+
+#home h5 {
     color: #fff;
 }
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#typed {
+    color: #fff;
+    font-family: ;
+    font-size: 22px;
+    font-family: 'Sanchez', serif;
+    text-align: center;
+    left: 200px;
+}
+
+/*Information*/
+
+/*FAQ*/
+#faq {
+  background-color: #f0f0f0;
+  padding-top: 15px;
+}
+
+/*Sponsors*/
+
+
+
+
+
+
+
+
+
