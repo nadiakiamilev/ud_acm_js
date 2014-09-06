@@ -23,19 +23,42 @@ h1 {
   color: #02569E;
 }
 
-
+.container {
+  width: 100%;
+}
 .contentpg {
-  /*margin-top: 200px;*/
-  /*vertical-align: middle;*/
+  /*margin-top: 200px;
+  vertical-align: middle;*/
   /*text-align: center;*/
-  /*max-width: 600px;*/
   margin: auto;
   width: 100%;
-  min-height: 450px;
+  min-height: 425px;
   display: block;
 }
 
 /*Button CSS*/
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  border-radius: 0px;
+  border: 0px;
+  color: #ffffff;
+  font-size: 22px;
+  background: #02569E;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  width: 200px;
+}
+
+.btn:hover {
+  background: #2c3e50;
+  text-decoration: none;
+}
+
 #btn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -43,25 +66,22 @@ h1 {
   font-weight: 300;
   border-radius: 0px;
   border: 0px;
-  /*font-family: Arial;*/
   color: #ffffff;
-  font-size: 18px;
-  background: #2c3e50;
+  font-size: 22px;
+  background: #02569E;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   margin: auto;
   text-align: center;
+  width: 200px;
 }
 
 #btn:hover {
-  background: #02569E;
+  background: #2c3e50;
   text-decoration: none;
 }
 
 /*Home Section CSS*/
-.wrap{
-  
-}
 
 #home {
   min-height: 100%;
@@ -69,7 +89,8 @@ h1 {
 }
 
 #home h1 {
-  font-size: 105px;
+  font-size: 120px;
+  position: relative;
   margin-top: 0px;
   color: #fff;
   min-height: 100%;
@@ -94,7 +115,7 @@ h1 {
 }
 
 #home { 
-  background: url(../img/campus.jpg) 50% 0 fixed; 
+  background: url(../img/campuscopy.jpg) 50% 0 fixed; 
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;  
@@ -104,19 +125,25 @@ h1 {
   padding: 200px 0;
 }
 
-#arrow {
+#arrow a {
   color: #fff;
   font-size: 40px;
   margin: auto;
+  vertical-align: bottom;
 }
 
 #details {
-  margin-top: 75px;
+  /*margin-top: 300px;*/
+  margin-top: 15%;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .typed-cursor{
-    opacity: 1;
+    opacity: 0.2;
+    color: #fff;
+    font-size: 22px;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
@@ -147,6 +174,9 @@ h1 {
 }
 
 /*What is DelHack?*/
+#information {
+  min-height: 415px;
+}
 #information p {
   color: #2c3e50;
 }
@@ -154,16 +184,14 @@ h1 {
 /*FAQ*/
 #faq {
   background: url(../img/udbackground2.jpg) 50% 0 fixed; 
+  width: 100%;
   padding-top: 15px;
-  min-height: 500px;
+  padding-bottom: 15px;
+  min-height: 550px;
 }
 
 #faq h1 {
   color: #fff;
-}
-
-#questions {
-  /*max-width: 800px;*/
 }
 
 #questions h5 {
@@ -192,6 +220,14 @@ h1 {
   color: #2c3e50;
 }
 
+#footer {
+  text-align: center;
+}
+
+#footer a {
+ color: #2c3e50; 
+ text-align: center;
+}
 
 
 
